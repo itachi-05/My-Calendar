@@ -63,6 +63,7 @@ class ActivitySignIn : AppCompatActivity() {
             }
         })
         val url = "https://www.freeprivacypolicy.com/live/6afbae86-1c20-4d45-bc6f-b95f565a9221"
+        // new url
 
         binding.privacyPolicy.text = Html.fromHtml(
             "By clicking here, I state that I have read and understood the " +
