@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="340dp"
+    android:layout_height="480dp"
+    android:padding="5dp"
+    android:background="@drawable/layout_bg"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_gravity="center"
+    tools:ignore="Autofill">
+
+    <ImageView
+        android:id="@+id/dialogClose"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_close_24"
+        android:textStyle="bold"
+        android:background="@drawable/layout_bg"
+        android:layout_gravity="end"
+        android:gravity="center"
+        tools:ignore="ContentDescription" />
+
+        <ScrollView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/task_datePicker_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pick_date"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/common_google_signin_btn_text_dark_pressed"
+                    />
+
+                <TextView
+                    android:id="@+id/event_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#000000"
+                    android:text="@string/no_date_picked"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:letterSpacing="0.03"
+                    />
+
+                <EditText
+                    android:id="@+id/event_task_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:inputType="textMultiLine"
+                    android:layout_marginBottom="12dp"
+                    android:hint="@string/enter_event_task_name"
+                    android:letterSpacing="0.03"
+                    />
+
+                <EditText
+                    android:id="@+id/event_task_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:inputType="textMultiLine"
+                    android:layout_marginBottom="12dp"
+                    android:hint="@string/enter_start_time"
+                    android:letterSpacing="0.03"
+                    />
+
+                <EditText
+                    android:id="@+id/event_task_end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:inputType="textMultiLine"
+                    android:layout_marginBottom="12dp"
+                    android:hint="@string/enter_end_time"
+                    android:letterSpacing="0.03"
+                    />
+
+                <EditText
+                    android:id="@+id/event_task_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:inputType="textMultiLine"
+                    android:layout_marginBottom="30dp"
+                    android:hint="@string/enter_location_venue"
+                    android:letterSpacing="0.03"
+                    />
+
+                <Button
+                    android:id="@+id/task_submit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:textSize="18sp"
+                    android:textColor="@color/teal_200"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/common_google_signin_btn_text_dark_pressed"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

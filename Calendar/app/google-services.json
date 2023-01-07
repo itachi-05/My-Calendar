@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "812618877949",
+    "firebase_url": "https://calendar-c1da1-default-rtdb.firebaseio.com",
+    "project_id": "calendar-c1da1",
+    "storage_bucket": "calendar-c1da1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812618877949:android:dc6abcb71ddfbade16a794",
+        "android_client_info": {
+          "package_name": "com.alpharays.calendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812618877949-t06tddpjsjbks8im10co6peq8ongaomq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhgDNjN8orCksQzDNRnDFWTImpFyNIRZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812618877949-t06tddpjsjbks8im10co6peq8ongaomq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

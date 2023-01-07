@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        tools:ignore="ContentDescription" />
+
+
+
+
+    <TextView
+        android:id="@+id/navHeaderUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textSize="25sp"
+        android:text="@string/user_name"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/navHeaderUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/user_email"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        android:textSize="13.6sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#BDB8B8"/>
+
+</LinearLayout>

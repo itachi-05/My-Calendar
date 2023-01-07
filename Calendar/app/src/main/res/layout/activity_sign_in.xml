@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".ui.ActivitySignIn">
+
+    <TextView
+        android:id="@+id/myCalendarTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:letterSpacing="0.02"
+        android:text="@string/my_calendar"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgViewSignIn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/icons8schedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myCalendarTxt"
+        tools:ignore="ContentDescription" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgViewSignIn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/icons8planner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myCalendarTxt"
+        tools:ignore="ContentDescription" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgViewSignIn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/icons8calendar"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewSignIn3"
+        app:layout_constraintStart_toEndOf="@+id/imgViewSignIn1"
+        app:layout_constraintTop_toBottomOf="@id/myCalendarTxt"
+        tools:ignore="ContentDescription" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/googleGIF"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.95"
+        android:layout_height="200dp"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toTopOf="@+id/privacy_policy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgViewSignIn1"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/google_sign_in_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:text="@string/one_tap_sign_in_with_google"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/googleGIF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <CheckBox
+        android:id="@+id/ok_privacy_policy_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FFE37C"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ok_privacy_policy_ok" />
+
+    <TextView
+        android:id="@+id/privacy_policy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ok_privacy_policy_ok"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
