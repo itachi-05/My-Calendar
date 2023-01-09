@@ -26,4 +26,13 @@
     <string name="venue">Venue</string>
     <string name="search" tools:keep="@string/search">Search</string>
     <string name="add_button">Add Button</string>
+    <string name="note_do_not_use_same_account_for_google_sign_in_and_email_address_sign_in_this_may_lead_to_data_loss"><strong>Note</strong>: Do not use same account for Google Sign In and Email Address Sign In. This may lead to data loss.</string>
+    <string name="or">OR</string>
+    <string name="login">Login</string>
+    <string name="show_password">Show Password</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="about">About</string>
 </resources>

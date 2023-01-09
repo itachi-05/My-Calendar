@@ -11,6 +11,7 @@ import android.graphics.*
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.view.View
 import android.widget.*
 import androidx.activity.OnBackPressedCallback
@@ -29,6 +30,7 @@ import java.time.LocalDate
 import java.util.*
 import kotlin.system.exitProcess
 import com.alpharays.calendar.R
+import com.alpharays.calendar.about.ActivityAbout
 import com.alpharays.calendar.data.TasksAdapter
 import com.alpharays.calendar.data.UserTask
 import java.text.SimpleDateFormat
@@ -72,8 +74,13 @@ class ActivityHome : AppCompatActivity() {
 
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                finishAffinity()
-                exitProcess(0)
+                if(binding.drawerLayout.isDrawerOpen(GravityCompat.START)){
+                    binding.drawerLayout.closeDrawer(GravityCompat.START)
+                }
+                else{
+                    finishAffinity()
+                    exitProcess(0)
+                }
             }
         })
 
@@ -108,6 +115,9 @@ class ActivityHome : AppCompatActivity() {
                 when (it.itemId) {
                     R.id.Log_out -> {
                         confirmingLogOut()
+                    }
+                    R.id.About -> {
+                        startActivity(Intent(this,ActivityAbout::class.java))
                     }
                 }
                 true
